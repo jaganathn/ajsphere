@@ -1,7 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
-namespace App\Libraries\User;
+namespace App\Http\Controllers\ParentControllers;
 
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
@@ -11,12 +10,52 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class Master_User extends BaseController
 {
+	function __construct()
+	{
+		
+	}
+	/**
+	 * Adding User
+	 */
+	public function add_user()
+	{
+		$this->manage_user();
+		$data['data'] = 'Add User';
+		$this->output($data);
+	}
+	/**
+	 * Search User
+	 */
+	public function search_user()
+	{
+		$this->manage_user();
+		$data['data'] = 'Search User';
+		$this->output($data);
+	}
+	/**
+	 * Edit User
+	 */
+	public function edit_user()
+	{
+		$this->manage_user();
+		$data['data'] = 'Edit User';
+		$this->output($data);
+	}
+	/**
+	 * Update User
+	 */
+	public function update_user()
+	{
+		$this->manage_user();
+		$data['data'] = 'Update User';
+		$this->output($data);
+		
+	}
 	/**
 	 * Mnage User
 	 */
 	public function manage_user()
 	{
-		echo 'Manage User';exit;
 		//use laravel functionality to read get/post data
 		$get_data = $_GET;
 		$post_data = $_POST;

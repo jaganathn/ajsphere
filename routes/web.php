@@ -20,13 +20,13 @@ Route::get('/Test', function () {
 });
 
 //Web Routing
-Route::get('/user/add_user', 'web\user@add_user');
-Route::get('/user/search_user', 'web\user@search_user');
-Route::get('/user/edit_user', 'web\user@edit_user');
-Route::get('/user/update_user', 'web\user@update_user');
+Route::get('/user/add_user', 'Web\user@add_user');
+Route::get('/user/search_user', 'Web\user@search_user');
+Route::get('/user/edit_user', 'Web\user@edit_user');
+Route::get('/user/update_user', 'Web\user@update_user');
 
 //MObile Routing
-Route::get('/m/user/add_user', 'services\mobile\user@add_user');
-Route::get('/m/user/search_user', 'services\mobile\user@search_user');
-Route::get('/m/user/edit_user', 'services\mobile\user@edit_user');
-Route::get('/m/user/update_user', 'services\mobile\user@update_user');
+Route::get('/m/user/add_user', 'Services\Mobile\user@add_user');
+Route::get('/m/user/search_user', 'Services\Mobile\user@search_user');
+Route::get('/m/user/edit_user', 'Services\Mobile\user@edit_user');
+Route::get('/m/user/update_user', 'Services\Mobile\user@update_user');
