@@ -1,6 +1,6 @@
 <?php
 namespace App\Http\Controllers\Services\Mobile;
-use App\Http\Controllers\ParentControllers\Master_User;
+use App\Http\Controllers\Master\Master_User;
 
 class User extends Master_User
 {

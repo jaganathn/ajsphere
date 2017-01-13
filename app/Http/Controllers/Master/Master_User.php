@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\ParentControllers;
+namespace App\Http\Controllers\Master;
 
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
@@ -12,7 +12,7 @@ class Master_User extends BaseController
 {
 	function __construct()
 	{
-		
+		parent::__construct();
 	}
 	/**
 	 * Adding User
